@@ -1,0 +1,39 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#effaff;color:#173f55}
+header{height:70px;display:flex;align-items:center;padding:0 5%;gap:25px;background:#fff;border-bottom:1px solid #c8e8f4;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #168dbb18}
+.logo{font-size:21px;font-weight:900;letter-spacing:2px;white-space:nowrap}
+.logo span{color:#159ed0}
+nav{display:flex;gap:3px;flex:1;overflow:auto}
+.tab{border:0;background:transparent;color:#557789;padding:10px 12px;border-radius:9px;font-weight:700;cursor:pointer;white-space:nowrap}
+.tab:hover,.tab.active{background:#d9f5fd;color:#118ab7}
+.cart{border:0;background:#159ed0;color:#fff;border-radius:10px;padding:11px 15px;font-weight:800;cursor:pointer}
+.cart b{background:#fff;color:#159ed0;border-radius:20px;padding:2px 6px}
+main{max-width:1150px;margin:auto;padding:45px 24px 80px}
+.page{display:none}.page.active{display:block}
+.hero{min-height:420px;border-radius:28px;padding:60px;background:linear-gradient(120deg,#b9eafb,#f3fcff 58%,#8ddaf4);display:flex;align-items:center;justify-content:space-between;overflow:hidden}
+.hero small{color:#138dbb;font-weight:900;letter-spacing:3px}
+.hero h1{font-size:62px;line-height:.95;margin:15px 0;color:#163f55}
+.hero h1 span{color:#159ed0}
+.hero p{max-width:490px;color:#527487;font-size:17px;line-height:1.6}
+.primary{border:0;background:#159ed0;color:#fff;border-radius:10px;padding:13px 19px;font-weight:900;cursor:pointer}
+.hero-card{width:235px;height:235px;border-radius:32px;background:#fff;color:#32add7;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:70px;box-shadow:0 20px 50px #138dbb30;transform:rotate(4deg)}
+.hero-card strong{font-size:21px}
+.hero-card small{font-size:14px}
+h1{font-size:40px;margin-bottom:8px}h2{margin-top:45px}.muted{color:#648193}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #c9e8f2;border-radius:17px;padding:13px;box-shadow:0 8px 22px #258eaa12;transition:.18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #258eaa20}
+.pic{height:175px;border-radius:12px;background:#e0f7fe;display:flex;align-items:center;justify-content:center;font-size:65px}
+.card h3{margin:12px 0 4px;color:#173f55}
+.price{color:#108bb8;font-weight:900}
+.add{width:100%;border:0;border-radius:8px;padding:10px;margin-top:9px;background:#e0f6fd;color:#087da6;font-weight:800;cursor:pointer}
+.add:hover{background:#159ed0;color:#fff}
+.modal{display:none;position:fixed;inset:0;background:#173f5570;z-index:20;align-items:center;justify-content:center}
+.modal.show{display:flex}
+.cart-box{background:#fff;width:min(480px,92%);border-radius:20px;padding:24px;position:relative}
+.close{position:absolute;right:13px;top:8px;border:0;background:none;font-size:28px;color:#557}
+.row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #d8edf3}
+.total{padding:20px 0;font-size:18px}.full{width:100%}
+footer{text-align:center;padding:28px;background:#dff6fd;color:#587687}
+@media(max-width:800px){.hero{padding:35px}.hero-card{display:none}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){header{height:auto;flex-wrap:wrap;padding:10px}.logo{width:100%}.grid{grid-template-columns:1fr}nav{width:100%}}
